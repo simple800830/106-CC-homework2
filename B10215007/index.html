@@ -1,1 +1,177 @@
-"homework not found!!" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        h1,
+        p,
+        div {
+            font-family: 'cwTeXYen', sans-serif;
+        }
+        
+        td,
+        th {
+            text-align: left;
+            padding-right: 3%;
+        }
+        
+        .splash {
+            padding: 9em 0 2em;
+            background-color: #141d27;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#top" class="navbar-brand">智慧生活應用DAYLYLIFE</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li><a href="#intention">題目發想</a></li>
+                    <li><a href="#ourvalue">摘要</a></li>
+                    <li><a href="#resAndFix">評審的回應及修正</a></li>
+                    <li><a href="#servicemodel">技術介紹</a></li>
+                    <li><a href="#function">主要功能</a></li>
+                    <li><a href="#product">產品預覽圖</a></li>
+                    <li><a href="#api">API</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#ourteam">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row splash" id="top">
+        <h1>智慧生活應用DAYLYLIFE</h1>
+    </div>
+    <div class='container'>
+        <div class="row" id="intention">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>題目發想</h1>
+                <p class="lead">
+                    身為Youbike的長期使用者，有時候會遇到有車騎過去目的地卻在要回程的時候無車可借的窘境。 因此決定要打造一個方便且容易使用的介面，並結合已經有的google 地圖ＡＰＩ，提供有需要的使用者方便查詢24小時之內台北市各站點每5分鐘的可用車子數量
+                </p>
+            </div>
+        </div>
+        <div class="row" id="ourvalue">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>摘要</h1>
+                <p class="lead">
+                    我們的產品會提供即時Youbike個站點之資訊，除此之外，更能夠預測各個站點未來一天之內的腳踏車數量，最後更搭配建立網站將資料視覺化，讓使用者可以一眼就看出資料量的變化，且無須安裝任何app或應用程式，只要一個連結就可以快速的查詢各站點未來24小時內的預測可借車子的數量。
+                </p>
+            </div>
+        </div>
+        <div class="row" id="resAndFix">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>評審的回應及修正</h1>
+                <p class="lead">
+                    <li style="font-size: 20px;">噪音監測資料建模的問題</li>
+                    <div style="font-size: 20px;">資料不足.資料量不夠，造成資料建模不易，故我們尋求其他資料能補齊</div>
+                    <li style="font-size: 20px;">產品與服務的實用性及市場淺力</li>
+                    <div style="font-size: 20px;">由於我們未針對淺在使用者這塊做評估，造成產品未有主要客群及未來發展性，所以我們針對日常生活再重新思考需求的部分</div>
+                </p>
+            </div>
+        </div>
+        <div class="row" id="servicemodel">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>技術介紹</h1>
+                <p class="lead">
+                    本次使用的資料是由台北市政府提供的Youbike即時狀態資料，使用NodeJS本每分鐘抓取之後存進MySQL資料庫中。目前已經累積超過百萬筆的紀錄，資料數量極為龐大，對於後續訓練多層神經網路模型有著極大的幫助 我們相信天氣對於預測有著很大的影響，因此資料除了有各站點的狀態外，我也使用商用天氣API一起把當時各站點所在的區域的天氣同時記錄下來
+                </p>
+            </div>
+        </div>
+        <div class="row" id="function">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>主要功能</h1>
+                <ol style="font-size: 20px;">
+                    <li>
+                        簡易的視覺操作介面
+                    </li>
+                    <li>
+                        實際預測 24小時內的 Ubike站點資訊
+                    </li>
+                    <li>天氣資料整合</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row" id="product">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>產品預覽圖</h1>
+                <p class="lead">
+                    <a href="https://istherebike.ddns.net/">Live Demo</a>
+                    <img src="./imgs/c.jpg" alt="Something goes wrong..." width="100%">
+                </p>
+            </div>
+        </div>
+        <div class="row" id="api">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>API</h1>
+                <p class="lead">
+                    <ol style="font-size: 20px;">
+                        <li>
+                            <a href="http://data.taipei/opendata/datalist/datasetMeta/outboundDesc?id=8ef1626a-892a-4218-8344-f7ac46e1aa48&rid=ddb80380-f1b3-4f8e-8016-7ed9cba571d5">
+                                YouBike臺北市公共自行車即時資訊API存取
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.wunderground.com/weather/api/">
+                                WeatherUnderground Api
+                            </a>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+        <div class="row" id="ourteam">
+            <div class="col-lg-8 col-md-7 col-sm-6">
+                <h1>關於我們</h1>
+                <p class="lead">
+                    <table style="font-size: 20px;">
+                        <thead>
+                            <tr>
+                                <th>馬佳誠</th>
+                                <th>組長，負責報告彙整及一切大小事務</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>劉昌衡</td>
+                                <td>負責網頁前端設計</td>
+                            </tr>
+                            <tr>
+                                <td>黃德育</td>
+                                <td>負責後端資料蒐集/建模</td>
+                            </tr>
+                            <tr>
+                                <td>茅向安</td>
+                                <td>負責資料庫設計</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
